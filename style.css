@@ -1,0 +1,290 @@
+/* ==========================
+   GOOGLE FONT
+========================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap');
+
+/* ==========================
+   RESET
+========================== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/* ==========================
+   BODY
+========================== */
+body{
+    background:#000;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* ==========================
+   FULL SCREEN BACKGROUND
+========================== */
+body{
+    background-image:
+    linear-gradient(rgba(0,0,0,0.75),
+    rgba(0,0,0,0.75)),
+    url("images/photo1.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+
+/* ==========================
+   DARK OVERLAY
+========================== */
+.overlay{
+    min-height:100vh;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px;
+}
+
+/* ==========================
+   CONTENT
+========================== */
+.content{
+    width:90%;
+    max-width:1000px;
+    animation:fadeUp 1.2s ease;
+}
+
+/* ==========================
+   TITLE
+========================== */
+h1{
+    font-size:90px;
+    font-weight:800;
+    margin-bottom:20px;
+    text-shadow:0 0 20px rgba(255,255,255,.2);
+}
+
+/* ==========================
+   SUBTITLE
+========================== */
+h2{
+    color:#E50914;
+    letter-spacing:8px;
+    font-size:22px;
+    margin-bottom:25px;
+}
+
+/* ==========================
+   SMALL TITLE
+========================== */
+h3{
+    font-size:35px;
+    font-weight:300;
+    margin-bottom:20px;
+}
+
+/* ==========================
+   PARAGRAPH
+========================== */
+p{
+    font-size:22px;
+    line-height:40px;
+    color:#dddddd;
+    margin-bottom:35px;
+}
+
+/* ==========================
+   BUTTON
+========================== */
+.btn{
+
+    display:inline-block;
+
+    padding:18px 50px;
+
+    background:#E50914;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:20px;
+
+    border-radius:6px;
+
+    transition:.4s;
+
+    font-weight:600;
+}
+
+.btn:hover{
+
+    background:white;
+
+    color:black;
+
+    transform:scale(1.05);
+}
+
+/* ==========================
+   LARGE IMAGE
+========================== */
+.memory{
+
+    width:90%;
+
+    max-width:900px;
+
+    height:auto;
+
+    border-radius:18px;
+
+    margin:40px auto;
+
+    display:block;
+
+    box-shadow:0 20px 60px rgba(0,0,0,.6);
+
+    transition:.5s;
+}
+
+.memory:hover{
+
+    transform:scale(1.03);
+
+    box-shadow:0 25px 80px rgba(255,255,255,.15);
+}
+
+/* ==========================
+   AUDIO PLAYER
+========================== */
+audio{
+
+    width:80%;
+
+    margin-top:25px;
+}
+
+/* ==========================
+   FADE ANIMATION
+========================== */
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+}
+
+/* ==========================
+   MOBILE
+========================== */
+@media(max-width:768px){
+
+h1{
+
+    font-size:55px;
+
+}
+
+h2{
+
+    font-size:18px;
+
+}
+
+h3{
+
+    font-size:24px;
+
+}
+
+p{
+
+    font-size:18px;
+
+    line-height:30px;
+
+}
+
+.btn{
+
+    font-size:18px;
+
+    padding:15px 35px;
+
+}
+
+.memory{
+
+    width:95%;
+
+}
+} 
+/* ===========================
+   MEMORY PAGE
+=========================== */
+
+.memory{
+
+    width:90%;
+
+    max-width:900px;
+
+    border-radius:20px;
+
+    display:block;
+
+    margin:40px auto;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.7);
+
+    transition:.5s;
+
+}
+
+.memory:hover{
+
+    transform:scale(1.03);
+
+}
+
+.quote{
+
+    font-size:26px;
+
+    font-style:italic;
+
+    color:white;
+
+    margin:40px 0;
+
+    opacity:.9;
+
+}
+
+.intro{
+
+    font-size:22px;
+
+    line-height:40px;
+
+    margin-bottom:30px;
+
+}
